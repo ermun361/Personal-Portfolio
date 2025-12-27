@@ -1,145 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Porfolio</title>
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- fav icon -->
-     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- All content goes here -->
-     <main>
-        <!-- SIDEBAR(Left Column) -->
-         <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./assets/images/my-avatar.png" alt="Eric Munyi" width="80">
-                </figure>
+    <main>
+      <!-- SIDEBAR(Left Column) -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Eric Munyi"
+              width="80"
+            />
+          </figure>
 
-                <div class="info-content">
-                    <h1 class="name" title="Eric Munyi">Eric Munyi</h1>
+          <div class="info-content">
+            <h1 class="name" title="Eric Munyi">Eric Munyi</h1>
 
-                    <p class="title">Web Developer</p>
+            <p class="title">Web Developer</p>
+          </div>
+
+          <button class="info_more-btn" daata-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="ericmunyi361@gmail.com" class="contact-link"
+                  >ericmunyi361@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+25474107205" class="contact-link"
+                  >+254 7 410-7205</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1999-01-16">January 16,1999</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Nairobi,Kenya</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-icon">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="main-content">
+        <!-- Navbar and pages -->
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Porfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm UI/UX Designer from Nairobi, Kenya, working in web development
+              and creative arts. I enjoy turning complex problems into simple,
+              beautiful and intuitive designs.
+            </p>
+
+            <p>
+              My job is to build your website(s) so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way. I created web design for many
+              famous brand companies.
+            </p>
+          </section>
+
+          <!-- SERVICE -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
                 </div>
 
-                <button class="info_more-btn" daata-sidebar-btn>
-                    <span>Show Contacts</span>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
 
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="web development icon"
+                    width="40"
+                  />
+                </div>
 
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-                <ul class="contacts-list">
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-                    <li class="contact-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="ericmunyi361@gmail.com" class="contact-link">ericmunyi361@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
 
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-quote.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-                            <a href="tel:+25474107205" class="contact-link">+254 7 410-7205</a>
-                        </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Pencil drawings</h4>
+                  <p class="service-item-text">
+                    I make high-quality pencil drawings of any category at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-                    </li>
+          <!-- testimonials -->
 
+          <section class="testimonials">
+            <h3 class="h3 testimonnials-title">Testimonials</h3>
 
-                    <li class="contact-item">
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Peter Mwaniki"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data
+                    data-testimonials-title
+                  >
+                    Peter Mwaniki
+                  </h4>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
+                  <div class="testimonials-text" data-testimonial-text>
+                    <p>
+                      "We hired Eric to completely overhaul our corporate web
+                      presence, and we were thoroughly impressed with the
+                      quality of work delivered. It is immediately clear that he
+                      possesses a wealth of technical experience, as he
+                      navigated complex requirements with ease. Beyond his
+                      coding skills, he is deeply concerned about the specific
+                      needs of the client, ensuring the final product aligned
+                      perfectly with our business goals. We are incredibly
+                      pleased with the outcome and highly recommend his
+                      services."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Mali Mwendwa"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-                            <time datetime="1999-01-16">January 16,1999</time>
-                        </div>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data
+                    data-testimonials-title
+                  >
+                    Mali Mwendwa
+                  </h4>
 
-                    </li>
+                  <div class="testimonials-text" data-testimonial-text>
+                    <p>
+                      "Working with Eric was an absolute game-changer for our
+                      project. We brought him on board to build our platform's
+                      identity, and he delivered a solution that exceeded our
+                      expectations in both design and functionality. He brings a
+                      rare combination of high-level development expertise and
+                      genuine empathy for the client's vision, making the
+                      process smooth and stress-free. He didn't just write code;
+                      he acted as a partner who truly cared about the success of
+                      our launch."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Juliet Mawia"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data
+                    data-testimonials-title
+                  >
+                    Juliet Mawia
+                  </h4>
 
-                    <li class="contact-item">
+                  <div class="testimonials-text" data-testimonial-text>
+                    <p>
+                      "I cannot say enough good things about the work Eric did
+                      for us. He was hired to develop a custom solution for our
+                      brand, and his depth of experience was evident from day
+                      one. He is very attentive to the client’s needs, taking
+                      the time to explain technical details and ensuring the
+                      website was not only beautiful but also fast and secure.
+                      It is rare to find a developer who is so committed to
+                      client satisfaction and detail-oriented in their
+                      execution."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Mike Njoroge"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data
+                    data-testimonials-title
+                  >
+                    Mike Njoroge
+                  </h4>
 
-                            <address>Nairobi,Kenya</address>
-                        </div>
-                    </li>
-                </ul>
+                  <div class="testimonials-text" data-testimonial-text>
+                    <p>
+                      "We were very pleased with the work Eric did when we hired
+                      him to create our new digital identity. He has a
+                      significant amount of experience in the web development
+                      space, which allowed him to anticipate potential issues
+                      before they became problems. What stands out most,
+                      however, is how concerned he is with the client's
+                      happiness; he listened to every request and implemented
+                      changes quickly and accurately. He is a true professional
+                      who takes great pride in his craft."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-                <div class="separator"></div>
+          <!-- testimonial modal -->
 
-                <ul class="social-list">
-                    <li class="social-icon">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-icon">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-icon">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
+          <!--
+                - testimonials modal
+                -->
 
-            </div>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-         </aside>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-         <!-- Main content -->
-          <div class="main-content">
-            <!-- Navbar and pages -->
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    "Working with Eric was an absolute game-changer for our
+                    project. We brought him on board to build our platform's
+                    identity, and he delivered a solution that exceeded our
+                    expectations in both design and functionality. He brings a
+                    rare combination of high-level development expertise and
+                    genuine empathy for the client's vision, making the process
+                    smooth and stress-free. He didn't just write code; he acted
+                    as a partner who truly cared about the success of our
+                    launch."
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
-     </main>
 
+          <!-- clients -->
 
+          <section class="clients">
 
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+                
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-1-color.png" alt="clients logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-2-color.png" alt="clients logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-3-color.png" alt="clients logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-4-color.png" alt="clients logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-5-color.png" alt="clients logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="./assets/images/logo-6-color.png" alt="clients logo">
+                    </a>
+                </li>
+
+            </ul>
+
+          </section>
+
+        </article>
+      </div>
+
+      
+    </main>
 
     <!-- js links -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-        
-     </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
 
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-     </script>
-
-     <script src="./assets/js/script.js"></script>
-    
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
