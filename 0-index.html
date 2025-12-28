@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Porfolio</title>
+    <title>My Personal Portfolio</title>
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./0-styles.css" />
+    <link rel="stylesheet" href="./0-styles.css"/>
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +44,8 @@
             <p class="title">Web Developer</p>
           </div>
 
-          <button class="info_more-btn" daata-sidebar-btn>
+          <!-- FIXED: daata-sidebar-btn to data-sidebar-btn -->
+          <button class="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
 
             <ion-icon name="chevron-down"></ion-icon>
@@ -107,18 +108,24 @@
 
           <ul class="social-list">
             <li class="social-icon">
-              <a href="#" class="social-link">
+              <a href="https://github.com/ermun361" class="social-link" target="_blank" rel="noopener" >
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
             <li class="social-icon">
-              <a href="#" class="social-link">
+              <a href="https://x.com/0xorakle?s=21" class="social-link" target="_blank" rel="noopener">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li class="social-icon">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
+              <a href="#" class="social-link" target="_blank" rel="noopener">
+                <ion-icon name="logo-instagram" ></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-icon">
+               <a href="https://www.linkedin.com/in/munyi-eric/" class="social-link" target="_blank" rel="noopener">
+                   <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
           </ul>
@@ -133,10 +140,13 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Resume</button>
             </li>
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Porfolio</button>
+              <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Blog</button>
@@ -268,13 +278,13 @@
 
                   <h4
                     class="h4 testimonials-item-title"
-                    data
                     data-testimonials-title
                   >
                     Peter Mwaniki
                   </h4>
 
-                  <div class="testimonials-text" data-testimonial-text>
+                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                  <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "We hired Eric to completely overhaul our corporate web
                       presence, and we were thoroughly impressed with the
@@ -303,13 +313,13 @@
 
                   <h4
                     class="h4 testimonials-item-title"
-                    data
                     data-testimonials-title
                   >
                     Mali Mwendwa
                   </h4>
 
-                  <div class="testimonials-text" data-testimonial-text>
+                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                  <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "Working with Eric was an absolute game-changer for our
                       project. We brought him on board to build our platform's
@@ -337,18 +347,18 @@
 
                   <h4
                     class="h4 testimonials-item-title"
-                    data
                     data-testimonials-title
                   >
                     Juliet Mawia
                   </h4>
 
-                  <div class="testimonials-text" data-testimonial-text>
+                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                  <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "I cannot say enough good things about the work Eric did
                       for us. He was hired to develop a custom solution for our
                       brand, and his depth of experience was evident from day
-                      one. He is very attentive to the client’s needs, taking
+                      one. He is very attentive to the client's needs, taking
                       the time to explain technical details and ensuring the
                       website was not only beautiful but also fast and secure.
                       It is rare to find a developer who is so committed to
@@ -371,13 +381,13 @@
 
                   <h4
                     class="h4 testimonials-item-title"
-                    data
                     data-testimonials-title
                   >
                     Mike Njoroge
                   </h4>
 
-                  <div class="testimonials-text" data-testimonial-text>
+                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                  <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "We were very pleased with the work Eric did when we hired
                       him to create our new digital identity. He has a
@@ -541,7 +551,7 @@
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Makueni Boys’ High School
+                  Makueni Boys' High School
                 </h4>
                 <span>Feb 2013 — Dec 2016</span>
                 <p class="timeline-text">
@@ -654,10 +664,10 @@
         </article>
 
         <!-- PORTFOLIO -->
-
-        <article class="portfolio" data-page="porfolio">
+        <!-- FIXED: Changed data-page="porfolio" to data-page="portfolio" to match navbar -->
+        <article class="portfolio" data-page="portfolio">
           <header>
-            <h2 class="h2 article-title">Porfolio</h2>
+            <h2 class="h2 article-title">Portfolio</h2>
           </header>
 
           <section class="projects">
@@ -678,7 +688,8 @@
 
             <div class="filter-select-box">
               <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
+                <!-- FIXED: data-selecct-value to data-select-value -->
+                <div class="select-value" data-select-value>
                   Select category
                 </div>
 
@@ -729,6 +740,280 @@
 
                   <p class="project-category">Web development</p>
                 </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- BLOG -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- #CONTACT -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://maps.google.com/maps?q=Kahawa+Sukari,Nairobi,Kenya&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="400"
+                height="300"
+                loading="lazy"
+                frameborder="0"
+              >
+              </iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="inout-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- js links -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./0-script.js"></script>
+  </body>
+</html>
               </li>
 
               <li
@@ -920,6 +1205,7 @@
                   <h3 class="project-title">Arrival</h3>
 
                   <p class="project-category">Web development</p>
+                </a>
                 </a>
               </li>
             </ul>
@@ -1191,6 +1477,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./0-script.js"></script>
   </body>
 </html>

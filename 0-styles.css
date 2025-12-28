@@ -931,7 +931,9 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 200px;  
+  max-height: 600px;
+  aspect-ratio: 4/3;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -999,6 +1001,19 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+@media (min-width: 450px) {
+  .project-img,
+  .blog-banner-box { 
+    height: 280px;  /* Tablet */
+  }
+}
+
+@media (min-width: 768px) {
+  .project-img { 
+    height: 320px;  /* Desktop */
+  }
 }
 
 
