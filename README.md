@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a sleek vCard-style design with smooth animations, project filtering, and an integrated contact form.
 
-![Portfolio Preview](./assets/images/preview.png)
+![Portfolio Preview](./assets/images/porfolio%20preview.png)
 
 ## ✨ Features
 
@@ -192,11 +192,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Your Name**
+**Eric Munyi**
 
 - GitHub: [@ermun361](https://github.com/ermun361)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/munyi-eric/)
+- Twitter: [@yourhandle](https://x.com/0xorakle?s=21)
 - Portfolio: [Your Website](https://ermun361.github.io/Personal-Portfolio/)
 
 ## 🙏 Acknowledgments
@@ -215,4 +215,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ If you found this helpful, please give it a star!
 
-**Made with ❤️ by [Your Name](https://github.com/ermun361)**
+**Made with ❤️ by [Eric Munyi](https://github.com/ermun361)**
