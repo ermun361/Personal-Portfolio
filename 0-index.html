@@ -43,8 +43,6 @@
 
             <p class="title">Web Developer</p>
           </div>
-
-          <!-- FIXED: daata-sidebar-btn to data-sidebar-btn -->
           <button class="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
 
@@ -283,7 +281,7 @@
                     Peter Mwaniki
                   </h4>
 
-                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                  
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "We hired Eric to completely overhaul our corporate web
@@ -318,7 +316,7 @@
                     Mali Mwendwa
                   </h4>
 
-                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "Working with Eric was an absolute game-changer for our
@@ -352,7 +350,6 @@
                     Juliet Mawia
                   </h4>
 
-                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "I cannot say enough good things about the work Eric did
@@ -386,7 +383,7 @@
                     Mike Njoroge
                   </h4>
 
-                  <!-- FIXED: data-testimonial-text to data-testimonials-text -->
+                 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
                       "We were very pleased with the work Eric did when we hired
@@ -660,6 +657,11 @@
                 </div>
               </li>
             </ul>
+
+            <a href="./assets/documents/ERIC MUNYI CV updated 3.pdf" download class="download-btn">
+                 <ion-icon name="download-outline"></ion-icon>
+                   Download Resume
+            </a>
           </section>
         </article>
 
@@ -1428,11 +1430,12 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
-              <div class="inout-wrapper">
+            <form id="contact-form" class="form" data-form>
+              <div class="input-wrapper">
                 <input
+                  id ="from_name"
                   type="text"
-                  name="fullname"
+                  name="from_name"
                   class="form-input"
                   placeholder="Full name"
                   required
@@ -1440,8 +1443,9 @@
                 />
 
                 <input
+                  id = "from_email"
                   type="email"
-                  name="email"
+                  name="from_email"
                   class="form-input"
                   placeholder="Email address"
                   required
@@ -1450,6 +1454,7 @@
               </div>
 
               <textarea
+                id="message"
                 name="message"
                 class="form-input"
                 placeholder="Your message"
@@ -1459,6 +1464,7 @@
 
               <button class="form-btn" type="submit" disabled data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
               </button>
             </form>
           </section>
@@ -1467,16 +1473,16 @@
     </main>
 
     <!-- js links -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
 
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="./0-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+  
+    <script src="./0-script.js" defer></script>
+    <script src="./contact.js" defer></script>
   </body>
 </html>
